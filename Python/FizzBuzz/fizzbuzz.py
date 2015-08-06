@@ -33,13 +33,13 @@ class FizzBuzz(object):
                 if 20 < n < 101:
                     self.fizzb(x, y, n)
                 else:
-                    print "N value is out of range, skipping this line: {}.\n".format(self.line_count)
+                    # print "N value is out of range, skipping this line: {}.\n".format(self.line_count)
                     return
             else:
-                print "Y value is out of range, skipping this line: {}.\n".format(self.line_count)
+                # print "Y value is out of range, skipping this line: {}.\n".format(self.line_count)
                 return
         else:
-            print "X value is out of range, skipping this line: {}.\n".format(self.line_count)
+            # print "X value is out of range, skipping this line: {}.\n".format(self.line_count)
             return
 
     def fizzb(self, x, y, n):
