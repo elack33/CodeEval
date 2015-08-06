@@ -13,13 +13,13 @@ def main():
             y = str(x)[::-1]
             if str(x) == y:
                 print x
-                exit()
+                break
 
 
 def is_prime(num):
     for i in range(2, num):
         if (num % i) == 0:
             return False
-        return True
+    return True
 
 main()
