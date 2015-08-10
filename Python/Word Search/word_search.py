@@ -25,20 +25,23 @@ with open('ws.txt') as test_cases:
         bottom = ''.join(board[2])
         ind_map = []
 
+
         for each_char in char_list:
+            count = 0
             if each_char in top:
                 ind = char_list.index(each_char)
-                ind_map.append(ind)
+                if char_list[ind + 1] == top[count + 1]: #check if next letter matches to the right
+                    pass
+                try:
+                    elif char_list[ind - 1] == top[count - 1]: #check if next letter matches to the left
+                catch:
+                    pass
+                elif char_list[ind + 1] == middle[ind]: #check if the next letter matches below
+                    pass
 
-        def group(L):
-            first = last = L[0]
-            for n in L[1:]:
-                if n - 1 == last: # Part of the group, bump the end
-                    last = n
-                else: # Not part of the group, yield current group and start a new
-                    yield first, last
-                    first = last = n
-            yield first, last # Yield the last group
+
+
+
 
         # from operator import itemgetter
         # from itertools import groupby
